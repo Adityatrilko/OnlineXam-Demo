@@ -1,0 +1,407 @@
+/*<div class="row">
+<div class="col-md-12"> 
+<div class="col-md-1">
+</div>
+<div class="col-md-10">
+
+</div>
+<div class="col-md-1">
+</div>
+</div>
+</div>
+*/
+
+h1
+{
+	color:white;
+	margin-left:25%;
+	
+	
+}
+#ho
+{
+	font-size:26px;
+	font-family:algerian;
+	color:#B0C515;
+	border:5px solid #fff;
+	background-color: rgba(0,0,0,.4);;
+}
+#hc
+{
+	color:white;
+	float:right;
+}
+#hl
+{
+	color:white;
+	float:left;
+}
+#head
+{
+	background-color:gray;
+	border:10px solid red;
+	
+}
+#link
+{
+	background-color:#5D0664;
+	border:12px solid black;
+	
+}
+#foot
+{
+	background-color:#5D0664;
+	border:12px solid black;
+	
+}
+#data
+{
+	margin-left:10px;
+	
+}
+
+#nav
+{
+	border-left:12px solid black;
+	border-right:12px solid black;
+}
+#datain
+{
+	margin-left:100px;
+	
+}
+#navin
+{
+	background-color: rgba(93,51,96,.6);
+	margin-top:20px;
+	text-align:center;
+	width:170px;	
+}
+ul
+{
+	margin-left:200px;
+	list-style-type:none;
+	margin-top:25px;
+}
+ol
+{
+	
+	list-style-type:none;
+	margin-top:25px;
+	
+}
+ul li
+{
+	display:inline-block;
+}
+ul li a
+{
+	text-decoration:none;
+	color:#fff;
+	padding: 5px 20px;
+	border:1px solid #fff transparent;
+	transition: 0.6s ease;
+	border:.2px solid #fff;
+}
+ul li a:hover
+{
+	background-color: #fff;
+	color:#000;
+}
+ul li.active a
+{
+	background-color: #fff;
+	color:#000;
+}
+
+ol li a
+{
+	text-decoration:none;
+	color:#fff;
+	padding: 5px 20px;
+	border:.2px solid #fff;
+	transition: 0.6s ease;
+	display:inline-block;
+	margin-bottom:15px;
+	margin-right:30px;
+}
+
+ol li a:hover
+{
+	background-color: #fff;
+	color:#000;
+}
+ol li.active a
+{
+	background-color: #fff;
+	color:#000;
+}
+
+.logo img
+{
+	float:left;
+	width:150px;
+	height:60px;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+
+
+#wal
+{
+	height:500px;
+	width:880px;
+	margin-top:6px;
+	margin-left:10px;
+}
+
+	
+	
+#bod
+{
+	height: 500px;
+	width:83.3%;
+	border-left:12px solid black;
+	border-right:12px solid black;	
+	
+}
+
+
+
+#imag
+{
+	height:20px;
+	width:20px;
+	margin-top:6px;
+	margin-left:10px;
+	
+}
+
+
+.main
+{
+	max-width:1200px;
+	margin:auto;
+}
+#form2
+{
+	background-color:gold;
+	margin-left:300px;
+	margin-top:50px;
+	margin-bottom:50px;
+	height:350px;
+	width:500px;
+	border:2px solid gray;
+}	
+#form3
+{
+	background-color:gold;
+	margin-left:300px;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:500px;
+	border:2px solid gray;
+	border-bottom-style:aqua; 
+}	
+
+h3
+{
+	color:#fff;
+	font-family:lobster;
+	font-size:50px;
+}
+
+p
+{
+	font-size:18px;
+	color:#ddd;
+}
+	
+#abi
+{
+
+	margin-top:20px;
+	width:300px;
+	height:380px;
+	padding:1px;
+	border-radius:40%;
+	box-shadow:0 0 10px white;
+}
+
+#conth
+{
+	background-color:black;
+	color:whitesmoke;
+	font-size:30px;
+	text-align:center;
+}
+
+#contd
+{
+	background-color: gray;
+}
+
+#co
+{
+	margin-right:200px;
+	margin-left:300px;
+	margin-top:30px;
+        
+}
+
+h4
+{
+	font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: #fff;
+} 
+
+#contable
+{
+	border: 2PX SOLID YELLOW;
+	margin-top:20px;
+	height:300px;
+	width:500px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	box-sizing:border-box;
+}
+
+#in
+{
+	height: 600px;
+	width:83.3%;
+	background-size:cover; 
+	background-position:center;
+	font-size: 16px;
+	font-family: 'Open Sans',sans-serif;
+	border-left:12px solid black;
+	border-right:12px solid black;	
+}
+.wrapper
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.contact-us
+{
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	background:rgba(0,0,0,.7) ;
+	padding: 40px 50px;
+	border-radius: 5px;
+}
+.title
+{
+	font-size:2em;
+	line-height:1.25em;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:900;
+	letter-spacing:2px;
+	color:#ffc107;
+	padding-bottom:3px;
+	
+}
+.input-fields .items
+{
+	width:100px;
+	padding-bottom:10px;
+}
+.input-fields .items .label
+{
+	display:block;
+	font-size:1em;
+	color:#ffecb3;
+	text-transform:capitalize;
+	padding-bottom:3px;
+	
+}
+.input-fields .items .input,
+.input-fields .items .text-area
+{
+	background:transparent;
+	border:0;
+	border:1px solid #ffecb3;
+	width:350px;
+	padding:8px 10px;
+	font-size:1em;
+	color:#ffecb3;
+	border-radius:3px;
+} 
+#sen
+{
+	margin:0 30px;
+	background:#ffc107;
+	color:#ffecb3;
+	font-size:1.25em;
+	padding:10px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+}
+
+.items #msg
+{
+	height:100px;
+	
+}
+.pro table
+{
+	height: auto; 
+	width:auto;
+	margin-left:150px;
+	background-color:whitesmoke; 
+	border:2px solid black; 
+}
+
+#protd
+{
+	font-size: 20px;
+	background-color: white;
+
+}
+
+#proth
+{
+	font-size: 20px;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

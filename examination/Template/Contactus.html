@@ -1,0 +1,83 @@
+{% load static %}<!--jinza format-->
+{% static 'images' as baseurl %}<!--To create a static to images in baseurl-->
+
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/newcss.css' %}"/>
+</head>
+
+<body>
+<div class="row">
+<div class="col-md-12"> 
+<div class="col-md-1">
+</div>
+<div class="col-md-10" id="link">
+    <div class="logo">
+        <a href="/.">
+        <img src="{% static 'images/logo2.jpg' %}"/>
+        </a>
+        </div>
+<ul>
+    <li><a href="/.">HOME</a></li>|
+    <li class="active"><a href="/about">ABOUT US</a></li>|
+    <li><a href="/contact">CONTACT US</a></li>|
+    <li><a href="/feedback">FEEDBACK</a></li>|
+    <li><a href="/register">REGISTRATION</a></li>|
+    {% if user.is_authenticated %}
+    <li><a href="/login">LOGOUT</a></li>|
+    {% endif %}
+</ul>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12"> 
+<div class="col-md-1"></div>
+<div class="col-md-10" id="bod" style="background-image:url('{% static 'images/background1.jpg' %}'); height: 500px; width:83.3%; background-size:cover; background-position:center;" >
+    
+    <ol>
+        <li>Shop No. 69 Tez Plaza,Hazratganj Lucknow. Near GPO PIN:226021</li>
+        <li> 554/2 Ganeshganj Nakka Road Lucknow. Near Divine Bakery PIN:226029</li>
+        <li>44/6 Aiyyaganj Lucknow.Behind Chirtian College PIN:226023</li>
+    </ol>
+    
+            
+        </div>
+    </div>
+</div>
+
+<div class="col-md-1">
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12"> 
+<div class="col-md-1">
+</div>
+<div class="col-md-10" id="foot">
+<h5 id="hl">Follow Us:</h5>&nbsp;
+<img src="{% static 'images/youtube.jpeg' %}" alt="youtube" id="imag"/>
+<img src="{% static 'images/twitter.jpeg' %}" alt="twitter" id="imag"/>
+<img src="{% static 'images/facebook.jpeg' %}" alt="facebook" id="imag"/>&nbsp;&nbsp;
+<img src="{% static 'images/instagram.jpeg' %}" alt="instagram" id="imag"/>
+<img src="{% static 'images/gmail.jpeg' %}" alt="gmail" id="imag"/>
+<h5 id="hc">Copyright © 2019 digiprop.com | All Rights Reserved.</h5>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+</div>
+</body>
+<html>
+
+
+
+
+
+

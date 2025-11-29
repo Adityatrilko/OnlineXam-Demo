@@ -1,0 +1,88 @@
+
+
+
+
+{% load static %}<!--jinza format-->
+{% static 'images' as baseurl %}<!--To create a static to images in baseurl-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Question Paper</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/newcss.css' %}"/>
+        <script>
+            var sec = 30;
+            function showTime() {
+                
+                document.getElementById("Timer").innerHTML =sec; 
+                sec=sec-1;
+                if(sec==0)
+                {
+                    document.getElementById("Question").submit();
+                }
+            }
+            setInterval(showTime, 1000);
+         </script>
+             
+</head>
+<body>
+    <body> 
+        <div class="row">
+        <div class="col-md-12">  
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10" id="link">
+            <div class="logo">
+                <a href="/.">
+                <img src="{% static 'images/logo2.jpg' %}"/>
+                </a>
+                </div>
+        <ul>
+        <li style="color:rgb(255, 255, 255); float:right; font-size:large;">Hello,{{vdata.First_Name}}</li>
+        </ul>
+        </div>
+        <div class="col-md-1">
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12"> 
+        <div class="col-md-1"></div>
+        <div class="col-md-10" id="bod" style="background-color:rgba(255, 255, 255, 0.966);">
+            <div class="col-md-7">
+            <form method="POST" id="Question">
+             {%csrf_token%}
+               
+                Question:
+                <textarea rows="7" style="width:600px" name="{{qdata.Qid}}">{{qdata.Qdes}}</textarea>
+                <br>
+                Options:
+                
+                <input type="radio" name="option" value="{{qdata.option1}}"/>{{qdata.option1}}
+                <input type="radio" name="option" value="{{qdata.option2}}"/>{{qdata.option2}}
+                <input type="radio" name="option" value="{{qdata.option3}}"/>{{qdata.option3}}
+                <input type="radio" name="option" value="{{qdata.option4}}"/>{{qdata.option4}}
+                <input type="radio" name="option" value="None" visibility="hidden" checked>
+                <br/>
+                <input type="submit" class="btn btn-primary"/>
+            </form>
+            </div>
+            <div class="col-md-3" style="width: 300px;"><h1 id="Timer"></h1></div>
+        </div>
+        <div class="col-md-1"></div>
+        </div>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    
+        
+    
+</body>
+</html>
